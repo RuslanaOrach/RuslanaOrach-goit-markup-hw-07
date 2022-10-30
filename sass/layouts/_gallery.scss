@@ -1,0 +1,115 @@
+.gallery-buttom-list {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-buttom-list .item {
+  margin-right: 8px;
+}
+
+.gallery-buttom-list .item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.gallery-list .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.gallery-list .discription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: var(--primary-text-color);
+  border: 1px solid var(--border-cards);
+}
+
+.gallery-list .title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-list .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.gallery-list-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+
+.gallery-list-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-list-link:hover .gallery-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery-list-link:focus .gallery-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gallery-overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  padding: 63px 24px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform, opacity;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+}
+
+.gallery-overlay-text {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.gallery-list-link:hover,
+.gallery-list-link:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-list-link:hover .gallery-overlay {
+  transform: translateY(0);
+}

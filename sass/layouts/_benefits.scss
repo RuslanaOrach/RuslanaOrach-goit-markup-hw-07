@@ -1,0 +1,45 @@
+.benefits-list .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.benefits-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.benefits-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.15;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.benefits-list .text {
+  color: var(--secondary-text-color);
+  line-height: 1.7;
+}
+
+.benefits-list,
+.work-examples-list,
+.team-list {
+  display: flex;
+}
+
+.benefits-list-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: rgba(245, 244, 250, 1);
+}
+
+.benefits-icon {
+  align-items: center;
+  height: 70px;
+  width: 70px;
+}
