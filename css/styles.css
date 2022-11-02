@@ -19,7 +19,7 @@
   --secondary-background-light: #f5f4fa;
   --secondary-background-dark: #2f303a;
   --studio-top-color: #000000;
-  --hero-button-hover: #188ce8;
+  --button-hover: #188ce8;
   --box-shadow: rgba(0, 0, 0, 0.15);
   --border-cards: #eeeeee;
   --border-main-nav: #ececec;
@@ -110,11 +110,11 @@ body {
   text-decoration: none;
 }
 
-.logo .logo-item {
+.logo .logo__icon {
   color: var(--accent-color);
 }
 
-.logo-footer .logo-item {
+.logo-footer .logo__icon {
   color: var(--accent-color);
 }
 
@@ -137,15 +137,15 @@ body {
   border-bottom: 1px solid var(--border-main-nav);
 }
 
-.site-nav {
+.navigation {
   display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.navigation .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.navigation .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -161,7 +161,7 @@ body {
   transition-timing-function: var(--cubic);
 } */
 
-/* contact */
+/* customers-list-image */
 
 /* .contact {
   display: flex;
@@ -190,11 +190,11 @@ body {
   transition-timing-function: var(--cubic);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
+.navigation .link:hover,
+.navigation .link:focus,
 .contact .link:hover,
 .contact .link:focus,
-.site-nav .current,
+.navigation .current,
 .address-list .route:hover,
 .address-list .route:focus,
 .address-list .link:hover,
@@ -441,7 +441,7 @@ body {
   padding-bottom: 94px;
 } */
 
-/* .customers-list-image {
+/* .customers-list-image{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,7 +464,7 @@ body {
   transition-timing-function: var(--cubic);
 }
 
-.customers-list-icon {
+.customers-list-image-icon {
   fill: currentColor;
 }
 
@@ -808,7 +808,7 @@ body {
 .field-button-sent:focus,
 .subscription-btn:hover,
 .subscription-btn:focus {
-  background-color: var(--hero-button-hover);
+  background-color: var(--button-hover);
 }
 
 .secondary-button:hover,

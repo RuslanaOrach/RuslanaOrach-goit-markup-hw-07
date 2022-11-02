@@ -1,14 +1,13 @@
-.team-list-image {
+.social-networks {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.social-link {
+
+.social-networks__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--white-color);
-  color: var(--icon-color);
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -16,13 +15,29 @@
   transition-property: color, background;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--white-color);
+  }
 }
 
-.social-icon {
-  fill: currentColor;
+.social-networks__team {
+  background: var(--white-color);
+  color: var(--icon-color);
+
+  transition-property: color, background;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--white-color);
+  }
 }
-.social-link:hover,
-.social-link:focus {
-  background: var(--accent-color);
-  color: var(--white-color);
+
+.social-networks__icon {
+  fill: currentColor;
 }

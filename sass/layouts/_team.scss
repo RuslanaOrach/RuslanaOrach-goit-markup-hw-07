@@ -1,4 +1,12 @@
-.section-team .item {
+.team {
+  background-color: var(--secondary-background-light);
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   text-align: center;
@@ -9,7 +17,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .title {
+.team__name {
   margin-bottom: 10px;
   text-align: center;
 
@@ -21,14 +29,14 @@
   margin-right: 0;
 }
 
-.team-list .text {
+.team__text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.17;
   margin-bottom: 16px;
 }
 
-.discription {
+.team__discription {
   padding-top: 30px;
   padding-bottom: 30px;
 }

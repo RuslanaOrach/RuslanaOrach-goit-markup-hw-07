@@ -1,35 +1,18 @@
 .logo {
-  margin-right: 93px;
-
-  color: var(--studio-top-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-}
-
-.logo-footer {
   color: var(--studio-top-color);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
 }
-
-.logo .logo-item {
+.logo__icon {
   color: var(--accent-color);
 }
 
-.logo-footer .logo-item {
-  color: var(--accent-color);
-}
-
-.footer-section .logo {
-  color: var(--white-color);
-}
-
-.footer-section .logo-footer {
+// .header__logo {
+//   margin-right: 93px;
+// }
+.footer__logo {
   color: var(--white-color);
 }

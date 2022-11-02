@@ -9,32 +9,25 @@
   align-items: baseline;
 }
 
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+// .footer-social-list {
+//   display: flex;
+//   justify-content: center;
+//   gap: 10px;
+// }
 
-.footer-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-
+.social-networks__footer {
   background: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
-  border-radius: 50%;
 
   transition-property: background;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
 }
 
 .footer-social-icon {
   fill: currentColor;
-}
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background: var(--accent-color);
 }

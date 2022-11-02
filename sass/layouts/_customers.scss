@@ -1,11 +1,11 @@
-.customers-list-image {
+.customers {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.customer-list-link {
+.customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,17 +16,16 @@
   border: 1px solid #afb1b8;
   border-radius: 4%;
 
-  transition-property: color, border;
+  transition-property: color, border-color;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
-.customers-list-icon {
+.customers__icon {
   fill: currentColor;
-}
-
-.customer-list-link:hover,
-.customer-list-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }
