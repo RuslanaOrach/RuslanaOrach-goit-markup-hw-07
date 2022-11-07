@@ -1,7 +1,6 @@
 @import './utils/vars';
 @import './utils/common';
 @import './utils/hidden';
-@import './utils/current';
 
 @import './components/container';
 @import './components/btn';
@@ -11,6 +10,7 @@
 @import './components/connect';
 
 @import './layouts/header';
+@import './layouts/current';
 @import './layouts/hero';
 @import './layouts/benefits';
 @import './layouts/work-examples';
